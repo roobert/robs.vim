@@ -1,9 +1,13 @@
 set background=dark
+
 highlight clear
+
 if exists("syntax on")
 	syntax reset
 endif
-let g:colors_name="rob"
+
+let g:colors_name="robs"
+
 hi Normal guifg=#bfbfbf guibg=#000000
 hi Comment guifg=#404040 guibg=NONE
 hi Constant guifg=#5a0087 guibg=NONE
@@ -18,6 +22,7 @@ hi Repeat guifg=#8200de guibg=NONE
 hi Operator guifg=#bfbfbf guibg=NONE
 hi Error guibg=#ff0000 guifg=#ffffff
 hi TODO guibg=#0011ff guifg=#ffffff
+
 hi link character	constant
 hi link number	constant
 hi link boolean	constant
