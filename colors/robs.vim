@@ -43,7 +43,7 @@ let s:lightorange = "137"
 let s:orange = "202"
 
 let s:c02 = "196" " red  - numbers 
-let s:c03 = "236" " dark gray - comments
+let s:c03 = "239" " dark gray - comments
 let s:c04 = "215" " orange - class/module
 let s:c05 = "b9b9b9" " text reset color?
 let s:c06 = "e3e3e3"
