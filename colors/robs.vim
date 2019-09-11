@@ -38,14 +38,13 @@ let s:pink   = "163" " higlight
 let s:red    = "196" " numbers
 let s:yellow = "226" " quotes
 let s:lightgrey = "238" " lightgrey - require 
-let s:bluepurple = "60" " bluepurple - do / end / self / @vars / false / numbers
 let s:lightorange = "137"
 let s:orange = "202"
 let s:black = "232"
-let s:function = "103"
 "let s:string = "246"
 "let s:string = "66"
-let s:string = "178"
+"let s:string = "178"
+"let s:string = "190"
 
 let s:c02 = "196" " red  - numbers 
 let s:c03 = "238" " dark gray - comments
@@ -60,6 +59,12 @@ let s:c0D = "87af00" " include / run, initialize
 let s:c0E = "5f0087" " Module / Class / def/end
 let s:c0F = "5e5e5e"
 
+"let s:string = "189"
+"let s:function = "103"
+let s:bluepurple = "60" " bluepurple - do / end / self / @vars / false / numbers
+let s:function = "61"
+let s:string = "146"
+let s:quotes= "190"
 
 call <sid>hi("Boolean",      "",             "",            "")
 call <sid>hi("Character",    "",             "",            "")
@@ -67,7 +72,7 @@ call <sid>hi("Comment",      s:c03,          "",            "")
 call <sid>hi("Conditional",  s:bluepurple,   "",            "")
 call <sid>hi("Constant",     "",             "",            "") " self, :symbols
 call <sid>hi("Define",       s:bluepurple,   "",            "") " def/class/module
-call <sid>hi("Delimiter",    s:yellow,        "",            "") " quotes / brackets (not in ruby)
+call <sid>hi("Delimiter",    s:quotes,        "",            "") " quotes / brackets (not in ruby)
 call <sid>hi("MatchParen",   s:orange,       "",            "") " parens
 call <sid>hi("Error",        "",             "",            "")
 call <sid>hi("Float",        "",             "",            "")
