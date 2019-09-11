@@ -42,8 +42,10 @@ let s:bluepurple = "60" " bluepurple - do / end / self / @vars / false / numbers
 let s:lightorange = "137"
 let s:orange = "202"
 let s:black = "232"
-let s:function = "246"
-let s:string = "242"
+let s:function = "103"
+"let s:string = "246"
+"let s:string = "66"
+let s:string = "178"
 
 let s:c02 = "196" " red  - numbers 
 let s:c03 = "238" " dark gray - comments
