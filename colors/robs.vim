@@ -37,14 +37,16 @@ let s:green  = "46"
 let s:pink   = "163" " higlight
 let s:red    = "196" " numbers
 let s:yellow = "226" " quotes
-let s:lightgrey = "59" " lightgrey - require 
+let s:lightgrey = "238" " lightgrey - require 
 let s:bluepurple = "60" " bluepurple - do / end / self / @vars / false / numbers
 let s:lightorange = "137"
 let s:orange = "202"
 let s:black = "232"
+let s:function = "246"
+let s:string = "242"
 
 let s:c02 = "196" " red  - numbers 
-let s:c03 = "239" " dark gray - comments
+let s:c03 = "238" " dark gray - comments
 let s:c04 = "215" " orange - class/module
 let s:c05 = "b9b9b9" " text reset color?
 let s:c06 = "e3e3e3"
@@ -63,11 +65,11 @@ call <sid>hi("Comment",      s:c03,          "",            "")
 call <sid>hi("Conditional",  s:bluepurple,   "",            "")
 call <sid>hi("Constant",     "",             "",            "") " self, :symbols
 call <sid>hi("Define",       s:bluepurple,   "",            "") " def/class/module
-call <sid>hi("Delimiter",    s:green,        "",            "") " quotes / brackets (not in ruby)
+call <sid>hi("Delimiter",    s:yellow,        "",            "") " quotes / brackets (not in ruby)
 call <sid>hi("MatchParen",   s:orange,       "",            "") " parens
 call <sid>hi("Error",        "",             "",            "")
 call <sid>hi("Float",        "",             "",            "")
-call <sid>hi("Function",     "",             "",            "")
+call <sid>hi("Function",     s:function,             "",            "")
 call <sid>hi("Identifier",   s:c0A,          "",            "") " variables
 call <sid>hi("Include",      s:lightgrey,    "",            "")
 call <sid>hi("Keyword",      "",             "",            "") " unknown
@@ -80,7 +82,7 @@ call <sid>hi("Special",      "",             "",            "")
 call <sid>hi("SpecialChar",  "",             "",            "")
 call <sid>hi("Statement",    s:bluepurple,   "",            "") " do/end
 call <sid>hi("StorageClass", "",             "",            "")
-call <sid>hi("String",       "",             "",            "")
+call <sid>hi("String",       s:string,             "",            "")
 call <sid>hi("Structure",    "",             "",            "")
 call <sid>hi("Tag",          "",             "",            "")
 call <sid>hi("Type",         "",             "",            "")
