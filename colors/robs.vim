@@ -58,7 +58,7 @@ let s:c0C = "e4e4e4" " \n #{}
 let s:c0D = "87af00" " include / run, initialize
 let s:c0E = "5f0087" " Module / Class / def/end
 let s:c0F = "5e5e5e"
-
+let s:white = "015"
 "let s:string = "189"
 "let s:function = "103"
 let s:bluepurple = "60" " bluepurple - do / end / self / @vars / false / numbers
@@ -126,4 +126,8 @@ call <sid>hi("WildMenu",     "",             "",            "")
 call <sid>hi("Menu",         "",             "",            "")
 call <sid>hi("Scrollbar",    "",             "",            "")
 call <sid>hi("Tooltip",      "",             "",            "")
+call <sid>hi("Pmenu",        "",             s:c0B,         "")
+call <sid>hi("PmenuSel",     s:black,        s:c0B,         "")
+call <sid>hi("PmenuSbar",    "",             "",            "")
+call <sid>hi("PmenuThumb",   "",             "",            "")
 
