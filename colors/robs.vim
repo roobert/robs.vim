@@ -33,11 +33,13 @@ fun! <sid>hi(group, ctermfg, ctermbg, attr)
   endif
 endfun
 
+let s:searchlightred = "009"
+let s:searchred = "052"
 let s:green  = "46"
 let s:pink   = "163" " higlight
 let s:red    = "196" " numbers
 let s:yellow = "226" " quotes
-let s:lightgrey = "238" " lightgrey - require 
+let s:lightgrey = "238" " lightgrey - require
 let s:lightorange = "137"
 let s:orange = "202"
 let s:black = "232"
@@ -46,7 +48,7 @@ let s:black = "232"
 "let s:string = "178"
 "let s:string = "190"
 
-let s:c02 = "196" " red  - numbers 
+let s:c02 = "196" " red  - numbers
 let s:c03 = "238" " dark gray - comments
 let s:c04 = "215" " orange - class/module
 let s:c05 = "b9b9b9" " text reset color?
@@ -108,13 +110,13 @@ call <sid>hi("ErrorMsg",     "",             "",            "")
 call <sid>hi("VertSplit",    "",             "",            "")
 call <sid>hi("Folded",       "",             "",            "")
 call <sid>hi("FoldColumn",   "",             "",            "")
-call <sid>hi("IncSearch",    s:black,        s:lightorange, "")
+call <sid>hi("IncSearch",    s:black,        s:searchlightred, "")
 call <sid>hi("LineNr",       "",             "",            "")
 call <sid>hi("ModeMsg",      "",             "",            "")
 call <sid>hi("MoreMsg",      "",             "",            "")
 call <sid>hi("NonText",      "",             "",            "")
 call <sid>hi("Question",     "",             "",            "")
-call <sid>hi("Search",       s:black,        s:orange,      "")
+call <sid>hi("Search",       s:black,        s:red,         "")
 call <sid>hi("SpecialKey",   "",             "",            "")
 call <sid>hi("StatusLine",   s:lightgrey,    "",            "")
 call <sid>hi("StatusLineNC", "",             "",            "")
